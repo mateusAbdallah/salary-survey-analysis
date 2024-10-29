@@ -56,3 +56,5 @@ filter_columns = ["age",
 df = df[filter_columns]
 df
 
+# %%
+df.groupby(['job_title'])['annual_salary'].mean().sort_values(ascending=False)
